@@ -160,6 +160,14 @@ vim.opt.scrolloff = 10
 -- Set Fold Defaults
 vim.opt.foldmethod = 'indent'
 vim.opt foldcolumn = '2'
+vim.opt.foldlevel = 99 -- Maximum fold depth (opens all folds)
+vim.opt.foldlevelstart = 99 -- Initial fold level when opening files
+vim.api.nvim_create_autocmd("BufWinEnter", { -- Open all folds on buffer entry
+  pattern = "*",
+  callback = function()
+    vim.cmd("normal! zR") -- zR opens all folds recursively
+  end
+})
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
