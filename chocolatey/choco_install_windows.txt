@@ -135,3 +135,9 @@ choco install Wget -y
 
 REM Zig: General-purpose programming language
 choco install zig -y
+
+REM Steam:
+choco install steam -y
+
+REM Private Internet Access
+choco install pia -y
