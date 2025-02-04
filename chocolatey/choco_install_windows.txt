@@ -141,3 +141,6 @@ choco install steam -y
 
 REM Private Internet Access
 choco install pia -y
+
+REM Rust
+choco install rust -y
