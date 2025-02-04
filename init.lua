@@ -102,7 +102,7 @@ vim.g.have_nerd_font = false
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -159,7 +159,7 @@ vim.opt.scrolloff = 10
 
 -- Set Fold Defaults
 vim.opt.foldmethod = 'indent'
-vim.opt foldcolumn = '2'
+vim.opt.foldcolumn = '2'
 vim.opt.foldlevel = 99 -- Maximum fold depth (opens all folds)
 vim.opt.foldlevelstart = 99 -- Initial fold level when opening files
 vim.api.nvim_create_autocmd("BufWinEnter", { -- Open all folds on buffer entry
