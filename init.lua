@@ -162,11 +162,11 @@ vim.opt.foldmethod = 'indent'
 vim.opt.foldcolumn = '2'
 vim.opt.foldlevel = 99 -- Maximum fold depth (opens all folds)
 vim.opt.foldlevelstart = 99 -- Initial fold level when opening files
-vim.api.nvim_create_autocmd("BufWinEnter", { -- Open all folds on buffer entry
-  pattern = "*",
+vim.api.nvim_create_autocmd('BufWinEnter', { -- Open all folds on buffer entry
+  pattern = '*',
   callback = function()
-    vim.cmd("normal! zR") -- zR opens all folds recursively
-  end
+    vim.cmd 'normal! zR' -- zR opens all folds recursively
+  end,
 })
 
 -- [[ Basic Keymaps ]]
@@ -201,6 +201,9 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left wind
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+
+--Return to Explorer
+vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Return to Explorer' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
