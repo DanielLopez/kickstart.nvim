@@ -205,6 +205,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 --Return to Explorer
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Return to Explorer' })
 
+--Open Terminal
+vim.keymap.set('n', '<leader>pt', ':te<CR>i', { desc = 'Open Terminal' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
