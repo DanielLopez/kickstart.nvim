@@ -208,6 +208,9 @@ vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Return to Explorer' })
 --Open Terminal
 vim.keymap.set('n', '<leader>pt', '<C-w>s20<C-w>_:te<CR>i', { desc = 'Open Terminal' })
 
+--Open Neotree
+vim.keymap.set('n', '<leader>pn', ':Neotree<CR>', { desc = 'Open Neotree' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -948,7 +951,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
-  -- require 'kickstart.plugins.neo-tree',
+  require 'kickstart.plugins.neo-tree',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
