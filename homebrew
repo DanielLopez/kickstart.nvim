@@ -100,3 +100,12 @@ brew install fzf
 
 #Finder
 brew install fd
+
+#Bat
+brew install bat
+
+#Too Long Didn't Read
+brew install tldr
+
+#EZA
+brew install eza
