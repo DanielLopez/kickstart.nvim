@@ -97,3 +97,6 @@ brew install ghostty
 
 #Fuzzy Finder (CLI)
 brew install fzf
+
+#Finder
+brew install fd
